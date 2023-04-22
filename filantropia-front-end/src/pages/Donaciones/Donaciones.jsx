@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../../utils/context/DataContext";
 import { motion } from "framer-motion";
-import { Toggle } from "../../components/atoms/Toggle/Toggle";
+import { HeaderDonations } from "../../components/organisms/HeaderDonations/HeaderDonations";
 import "./Donaciones.scss";
 
 export const Donaciones = () => {
+  const {DONATIONS} = useContext(DataContext);
+  const { header } = DONATIONS;
+  console.log({ header });
+
   return (
-    // <motion.div
-    //   initial={{ opacity: 0 }}
-    //   animate={{ opacity: 1 }}
-    //   exit={{ opacity: 0 }}
-    // >
-    <main className="donations">
-      <Toggle />
-    </main>
-    // </motion.div>
+    <motion.main
+      className="donations"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <HeaderDonations {...header} />
+    </motion.main>
   );
 };

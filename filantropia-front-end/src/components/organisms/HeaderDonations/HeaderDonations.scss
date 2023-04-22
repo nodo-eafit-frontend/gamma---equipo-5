@@ -1,0 +1,18 @@
+@import "/src/styles/index.scss";
+
+.donations__header{
+  padding: 1rem 0 5rem;
+  background-color: $color-tertiary;
+  border-top:none;
+  justify-content: flex-start;
+  gap:0rem;
+
+  .titleSection{
+    font-size: $font-size-l;
+  }
+
+  &-subtitle{
+    font-size: $font-size-s;
+    font-weight: $font-weight-subtitle-section;
+  }
+}

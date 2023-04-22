@@ -1,4 +1,4 @@
-export const DONACIONES = {
+export const DONATIONS = {
   header: {
     title: "TRANSFORMA VIDAS",
     subtitle: `“atraves de tus aportes para que alguien más alcance sus sueños”`,

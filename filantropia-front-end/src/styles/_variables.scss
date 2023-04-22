@@ -12,10 +12,12 @@ $font-family-secondary: 'Inter', sans-serif;
 $font-size-xs:1rem;
 $font-size-s:1.5rem;
 $font-size-m:2rem;
-$font-size-l:4rem;
+$font-size-l:3rem;
 
 $font-size-title-section: 4rem;
 $font-weight-title-section: 900;
+$font-size-subtitle-section: 4rem;
+$font-weight-subtitle-section: 700;
 
 $font-size-accordion-header-text: 2.4rem;
 $font-weight-accordion-header-text: 900;
@@ -31,4 +33,7 @@ $font-weight-card-category:900;
 $layer-first:1;
 $layer-second:100;
 
-$border-division-section:5px solid #EEE5E9;
+$border-division-section:5px solid $color-tertiary;
+
+$color-toggle-text:#f0f0f0;
+$font-weight-toggle-text:700;

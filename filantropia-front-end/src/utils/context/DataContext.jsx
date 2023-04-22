@@ -1,7 +1,7 @@
 import { createContext, useMemo } from "react";
 import { HEADER } from "../data/header";
 import { HOME_PAGE } from "../data/homePage";
-import { DONACIONES } from "../data/donaciones";
+import { DONATIONS } from "../data/donations";
 import { FOOTER } from "../data/footer";
 
 export const DataContext = createContext();
@@ -11,10 +11,10 @@ export const DataProvider = (props) => {
     () => ({
       HEADER,
       HOME_PAGE,
-      DONACIONES,
+      DONATIONS,
       FOOTER,
     }),
-    [HOME_PAGE]
+    [HOME_PAGE, DONATIONS, FOOTER, HEADER]
   );
 
   return (
