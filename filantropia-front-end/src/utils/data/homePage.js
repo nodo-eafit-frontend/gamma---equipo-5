@@ -27,6 +27,7 @@ export const HOME_PAGE = {
     button: {
       title: "Ver más",
       href: TESTIMONIOS,
+      
     },
   },
   whatIsFilantropia: [
