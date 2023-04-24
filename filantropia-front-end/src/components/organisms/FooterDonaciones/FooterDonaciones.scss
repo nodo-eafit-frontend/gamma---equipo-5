@@ -1,0 +1,26 @@
+@import "../../../styles/index.scss/";
+
+.FooterDonaciones {
+  width: 100%;
+  padding: 1rem 0 5rem;
+  background-color: $color-tertiary;
+  gap: 0rem;
+
+  .listCards {
+    width: 80%;
+    background-color: $color-tertiary;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    margin: 0;
+
+    p {
+      text-align: center;
+    }
+  }
+}

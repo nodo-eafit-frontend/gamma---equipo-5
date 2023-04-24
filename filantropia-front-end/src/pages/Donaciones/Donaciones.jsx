@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../utils/context/DataContext";
 import { motion } from "framer-motion";
+import { FooterDonaciones } from "../../components/organisms/FooterDonaciones/FooterDonaciones";
 import { HeaderDonations } from "../../components/organisms/HeaderDonations/HeaderDonations";
 import "./Donaciones.scss";
 
 export const Donaciones = () => {
   const {DONATIONS} = useContext(DataContext);
-  const { header } = DONATIONS;
+  const { header, footer} = DONATIONS;
   console.log({ header });
 
   return (
@@ -17,6 +18,7 @@ export const Donaciones = () => {
       exit={{ opacity: 0 }}
     >
       <HeaderDonations {...header} />
+      < FooterDonaciones footer={footer}/>
     </motion.main>
   );
 };
