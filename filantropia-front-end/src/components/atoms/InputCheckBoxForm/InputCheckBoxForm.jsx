@@ -1,20 +1,22 @@
 import { useField } from "formik";
 import "./InputCheckBoxForm.scss";
 
-const MyCheckbox = ({ children, ...props }) => {
-  // React treats radios and checkbox inputs differently other input types, select, and textarea.
-  // Formik does this too! When you specify `type` to useField(), it will
-  // return the correct bag of props for you -- a `checked` prop will be included
-  // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
-  const [field, meta] = useField({ ...props, type });
+export const InputCheckBoxForm = ({ children, ...props }) => {
+  const [field, meta] = useField({ ...props });
   return (
-    <div>
-      <label className="checkbox-input">
-        <input type={type} {...field} {...props} />
+    <div
+      className={`containerCheckboxInput containerCheckboxInput-${props.name}`}
+    >
+      <label className={`containerCheckboxInput__label`}>
+        <input
+          className={`containerCheckboxInput__input`}
+          {...field}
+          {...props}
+        />
         {children}
       </label>
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className={`containerCheckboxInput__error`}>{meta.error}</div>
       ) : null}
     </div>
   );

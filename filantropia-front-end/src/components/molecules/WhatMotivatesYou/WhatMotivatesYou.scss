@@ -1,0 +1,90 @@
+@import "/src/styles";
+@import "../TellAboutYourSelf/TellAboutYourSelf.scss";
+
+.whatMotivatesYou{
+  @extend .tellUsAboutYourself;
+  justify-content: start;
+
+  &__title{
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-title-form;
+    font-weight: $font-weight-title-form;
+  }
+
+  &__subtitle{
+    width: 100%;
+    text-align: center;
+    font-size:$font-size-subtitle-form ;
+    font-weight:$font-weight-subtitle-form ;
+  }
+
+  &__containerGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "donationFund donationFund"
+    "valueOfDonation recurrence"
+    "findUs findUs"
+    "wayToPay wayToPay"
+    "accept accept"
+    "questions questions"
+    "button button";
+    gap:2rem;
+
+    .containerTextInput-valueOfDonation{
+      width: 90%;
+      grid-area: valueOfDonation;
+    }
+
+    .containerSelect{
+      &-donationFund{
+        width: 90%;
+        grid-area: donationFund;
+      }
+      &-findUs{
+        width: 95%;
+        grid-area: findUs;
+      }
+
+      &-wayToPay{
+        width: 90%;
+        grid-area: wayToPay;
+      }
+    }
+
+    .containerCheckboxInput{
+      &-recurrence {
+        padding-top: 2rem;
+        grid-area: recurrence;
+      }
+
+      &-accept {
+        width: 100%;
+        font-weight: 400;
+        grid-area: accept;
+
+        label{
+          color:$color-background-primary;
+          font-size: $font-size-checkbox-label-form;
+          font-weight: $font-weight-checkbox-label--form;
+        }
+      }
+    }
+  }
+  .whatMotivatesYou__recurrenceQuestions{
+    text-align: left;
+    grid-area: questions;
+    width: 90%;
+    color: $color-background-primary;
+    font-size: $font-size-checkbox-label-form;
+    font-weight: $font-weight-checkbox-label--form;
+  }
+
+  button:last-child{
+    grid-area: button;
+    place-self: center;
+  }
+}

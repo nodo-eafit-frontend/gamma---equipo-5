@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useToggleState } from "../../../utils/hooks/useToggleState.js";
 import "./Toggle.scss";
 
 export const Toggle = (props) => {

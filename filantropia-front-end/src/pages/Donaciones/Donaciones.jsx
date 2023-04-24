@@ -9,7 +9,7 @@ export const Donaciones = () => {
   const { header } = DONATIONS;
 
   return (
-    <main>
+    <main className="donations">
       <HeaderDonations {...header} />
       <Outlet />
     </main>

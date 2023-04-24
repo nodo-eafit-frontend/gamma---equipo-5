@@ -16,7 +16,7 @@ export const DONATIONS = {
       },
     },
   },
-  bodyRealizarDonaciones: {
+  bodyDonations: {
     cuentanosDeTi: {
       title: "Cuéntanos de ti",
       form: [
@@ -440,13 +440,13 @@ export const DONATIONS = {
           ],
         },
       },
-    },
-    button: {
-      title: "Realiza tu donación",
-      href: "https://checkout.placetopay.com/spa/session/103878651/9b3ecb9e1d62ef4dbe4aa6c7834c1180",
+      button: {
+        title: "Realiza tu donación",
+        href: "https://checkout.placetopay.com/spa/session/103878651/9b3ecb9e1d62ef4dbe4aa6c7834c1180",
+      },
     },
   },
-  bodyGenerarCertificados: {
+  bodyCertifictes: {
     solicitarCertificado: {
       title: "Solicitar Certificado",
       form: {

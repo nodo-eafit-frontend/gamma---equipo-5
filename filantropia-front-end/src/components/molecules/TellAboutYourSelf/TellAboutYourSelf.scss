@@ -1,0 +1,130 @@
+@import "/src/styles";
+
+.tellUsAboutYourself{
+  background-color: $color-tertiary;
+  width: 45%;
+  padding: 4rem;
+  border:1px solid $color-secondary;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+
+  &__title{
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-title-form;
+    font-weight: $font-weight-title-form;
+  }
+
+  &__containerGrid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+
+    .containerCalendarInput-calendar{
+        order: 9;
+      }
+    
+      .containerTextInput {
+        &-document {
+          order: 2;
+        }
+    
+        &-names {
+          order: 3;
+        }
+    
+        &-surnames {
+          order: 4;
+        }
+    
+        &-tel {
+          order: 5;
+        }
+    
+        &-email {
+          order: 7;
+        }
+      }
+    
+      .containerSelect {
+        &-typeDocument {
+          order: 1;
+        }
+    
+        &-genre {
+          order: 6;
+        }
+    
+        &-civilStatus {
+          order: 8;
+        }
+    
+        &-country {
+          order: 10;
+        }
+    
+        &-department {
+          order: 11;
+        }
+    
+        &-city {
+          order: 12;
+        }
+      }
+  }
+
+  
+
+    // &-calendar {
+    //   grid-column: calendar;
+    // }
+
+    // &-document {
+    //   grid-column: document;
+    // }
+
+    // &-names {
+    //   grid-column: names;
+    // }
+
+    // &-surnames {
+    //   grid-column: surnames;
+    // }
+
+    // &-tel {
+    //   grid-column: tel;
+    // }
+
+    // &-email {
+    //   grid-column: email;
+    // }
+
+    // &-typeDocument {
+    //   grid-column: typeDocument;
+    // }
+
+    // &-genre {
+    //   grid-column: genre;
+    // }
+
+    // &-civilStatus {
+    //   grid-column: civilStatus;
+    // }
+
+    // &-country {
+    //   grid-column: country;
+    // }
+
+    // &-department {
+    //   grid-column: department;
+    // }
+
+    // &-city {
+    //   grid-column: city;
+    // }
+}

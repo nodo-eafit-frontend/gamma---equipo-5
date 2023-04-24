@@ -1,0 +1,15 @@
+@import "/src/styles";
+
+.containerCheckboxInput{
+  height: 100%;
+  width: 90%;
+  place-self: center;
+  display: flex;
+  align-items: center;
+
+  &__label{
+    font-size: 2rem;
+    font-weight: $font-weight-label-form;
+  }
+
+}

@@ -4,17 +4,22 @@ import "./InputTextForm.scss";
 export const InputTextForm = ({ label, placeholder, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <>
-      <label htmlFor={props.id || props.name}>{label}</label>
+    <div className={`containerTextInput containerTextInput-${props.name}`}>
+      <label
+        htmlFor={props.id || props.name}
+        className="containerTextInput__label"
+      >
+        {label}
+      </label>
       <input
-        className={`input-${props.name}`}
+        className={`containerTextInput__input containerTextInput__input-${props.name}`}
         {...field}
         {...props}
         placeholder={placeholder}
       />
       {meta.touched && meta.error && (
-        <div className={`error-${props.name}`}>{meta.error}</div>
+        <div className={`containerTextInput__error`}>{meta.error}</div>
       )}
-    </>
+    </div>
   );
 };

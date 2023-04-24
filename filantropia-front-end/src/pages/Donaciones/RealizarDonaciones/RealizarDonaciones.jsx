@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FormDonations } from "../../../components/organisms/FormDonations/FormDonations";
+import { DataContext } from "../../../utils/context/DataContext";
 import "./RealizarDonaciones.scss";
 
 export const RealizarDonaciones = () => {
-  return <h1>RealizarDonaciones</h1>;
+  const { DONATIONS } = useContext(DataContext);
+  const { bodyDonations } = DONATIONS;
+  return <FormDonations {...bodyDonations} />;
 };

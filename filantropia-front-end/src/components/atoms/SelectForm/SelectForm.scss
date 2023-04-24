@@ -1,0 +1,23 @@
+@import "/src/styles";
+
+.containerSelect{
+  width: 45%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__label{
+    font-size: $font-size-label-form;
+      font-weight: $font-weight-label-form;
+  }
+
+    &__select {
+      font-family: $font-family-secondary;
+      font-weight: $font-weight-input-form;
+      border: 2px solid transparent;
+      border-radius: 0.8rem;
+      background-color: white;
+      padding: 0.8rem;
+    }
+}
