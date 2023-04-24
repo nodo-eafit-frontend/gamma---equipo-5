@@ -1,4 +1,9 @@
-import { HOME, TESTIMONIOS, DONACIONES } from "../../routes/paths";
+import {
+  HOME,
+  TESTIMONIOS,
+  DONACIONES,
+  REALIZAR_DONACIONES,
+} from "../../routes/paths";
 
 export const HEADER = {
   logo: {
@@ -46,7 +51,7 @@ export const HEADER = {
     {
       id: "7",
       title: "Donaciones",
-      href: DONACIONES,
+      href: `${DONACIONES}/${REALIZAR_DONACIONES}`,
     },
   ],
 };

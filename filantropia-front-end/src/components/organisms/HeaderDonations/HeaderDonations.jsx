@@ -5,7 +5,6 @@ import "./HeaderDonations.scss";
 
 export const HeaderDonations = (props) => {
   const { title, subtitle, toggle } = props;
-  console.log(props);
   return (
     <section className="donations__header">
       <TitleSection title={title} />

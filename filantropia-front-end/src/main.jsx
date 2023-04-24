@@ -8,10 +8,10 @@ import { DataProvider } from "./utils/context/DataContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     {/* // Se envuelve la aplicacion del provider de rutas */}
-    <DataProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <DataProvider>
         <App />
-      </BrowserRouter>
-    </DataProvider>
+      </DataProvider>
+    </BrowserRouter>
   </>
 );
