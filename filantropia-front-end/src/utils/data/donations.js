@@ -545,10 +545,10 @@ export const DONATIONS = {
         id: 1,
         title: "Dirección",
         paragraphs: [
-          "Carrera 48 C 10 sur 106",
-          "Casa 8 Egresados",
-          "Barrio La Aguacatala II",
-          "Medellín - Colombia",
+          "Carrera 48 C 10 sur 106 " ,
+          "Casa 8 Egresados ",
+          "Barrio La Aguacatala II ",
+          "Medellín - Colombia ",
         ],
       },
       {
